@@ -91,6 +91,29 @@ button:hover {
     font-size: 18px;
 }
 
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.transaction.income-item { border-left-color: #4caf50; }
+.transaction.expense-item { border-left-color: #f44336; }
+
+.transaction-info {
+    flex-grow: 1;
+}
+
+.transaction-amount {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 .empty-message {
     text-align: center;
     color: #666;

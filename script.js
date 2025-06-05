@@ -110,3 +110,21 @@ function showTransactions() {
 
     container.innerHTML = html;
 }
+
+function deleteTransaction(id) {
+    // Find the specific transaction using ID and remove it
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].id === id) {
+            transactions.splice(i, 1);
+            break;
+        }
+    }
+
+    // Update the display
+    updateSummary();
+    showTransactions();
+}
+
+// Initialize display
+updateSummary();
+sho
